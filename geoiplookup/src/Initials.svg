@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Drop shadow for the badge -->
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+
+    <!-- Subtle shadow for the letters -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Badge Circle (original deep navy) -->
+  <circle
+    cx="100"
+    cy="100"
+    r="90"
+    fill="#0b1c3d"
+    stroke="#d3b16f"
+    stroke-width="6"
+    filter="url(#badgeShadow)"
+  />
+
+  <!-- Enlarged W + J -->
+  <g filter="url(#textShadow)">
+    <text
+      x="100"
+      y="150"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="125"
+      fill="#f8ead0"
+      stroke="#b8904a"
+      stroke-width="3"
+      paint-order="stroke"
+    >
+      W
+    </text>
+
+    <text
+      x="100"
+      y="150"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="110"
+      fill="#fdf4dc"
+      stroke="#b8904a"
+      stroke-width="3"
+      paint-order="stroke"
+    >
+      J
+    </text>
+  </g>
+</svg>
