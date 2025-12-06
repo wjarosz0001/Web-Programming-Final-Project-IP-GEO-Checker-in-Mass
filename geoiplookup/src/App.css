@@ -1,3 +1,5 @@
+/* --- Original CRA styles (kept so nothing breaks) --- */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,117 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* --- NEW CLEAN UI STYLES FOR IP LOOKUP TOOL --- */
+
+/* Center the whole tool */
+.app-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #e5e7eb;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Input row layout */
+.input-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* IP input styling */
+.ip-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e5e7eb;
+  width: 250px;
+}
+
+.ip-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Lookup button */
+.ip-button {
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ip-button:hover {
+  background: #2563eb;
+}
+
+.ip-button:disabled {
+  opacity: 0.6;
+}
+
+/* Error message */
+.error {
+  color: #f87171;
+  margin-top: 10px;
+}
+
+/* Output box containing results */
+.output-box {
+  margin-top: 20px;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Section title inside output box */
+.output-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 5px;
+}
+
+/* Blacklist list layout */
+.blacklist-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.blacklist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #374151;
+}
+
+/* Status pills */
+.pill {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.pill-ok {
+  background: #14532d;
+  color: #4ade80;
+}
+
+.pill-bad {
+  background: #7f1d1d;
+  color: #fca5a5;
 }
