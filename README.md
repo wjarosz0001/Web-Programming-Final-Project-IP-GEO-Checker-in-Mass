@@ -1,2 +1,3 @@
 # Web-Programming-Final-Project-IP-GEO-Checker-in-Mass
-This will be an IP geo location checker to output multiple IP locations to one file. 
+Does IP geolocation for an IP and checks against some blacklists. 
+There was some AI assitance from https://chatgpt.com/
